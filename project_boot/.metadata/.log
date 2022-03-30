@@ -408,3 +408,1210 @@ java.net.URISyntaxException: Illegal character in path at index 32: file:/C:/Use
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 10:45:08.747
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IHJxGuUu => OK
+!SESSION 2022-03-29 11:23:27.325 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-03-29 11:23:33.978
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 11:23:33.978
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4be1c797,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76bdfc19,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 11:23:33.978
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1248f83,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c28009f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:38.612
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:38.613
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@91bc5e5[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:38.617
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:38.653
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-29 11:23:40.057
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\itsok'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.754
+!MESSAGE Boot LS startup time from start to initialized: 5126ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.914
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.UkVesBZHisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.917
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.920
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.922
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.923
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.924
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.UkVesBZH => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.944
+!MESSAGE classpath=79 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.955
+!MESSAGE buffering callback sts4.classpath.UkVesBZH project false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:43.957
+!MESSAGE executing callback sts4.classpath.UkVesBZH 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:23:44.477
+!MESSAGE executing callback sts4.classpath.UkVesBZH SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:24:02.663
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.UkVesBZH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:24:02.665
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.UkVesBZH
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:24:02.666
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:24:02.668
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.UkVesBZH => OK
+
+!ENTRY org.eclipse.ui 2 2 2022-03-29 11:24:03.273
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+!SESSION 2022-03-29 11:27:00.547 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4 -data C:\Users\itsok\Desktop\MLP full-stack\MLP_FinalProject\project\MLP_finalproject\project_boot -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-03-29 11:27:06.744
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 11:27:06.744
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@447630c4,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@63d75087,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 11:27:06.744
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c8afba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@cae4952,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:13.284
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:13.285
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@43d442f5[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:13.288
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:13.332
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-29 11:27:15.163
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\itsok'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.065
+!MESSAGE Boot LS startup time from start to initialized: 5767ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.221
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.XlOkUbAtisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.224
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.228
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.229
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.230
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.231
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.XlOkUbAt => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.251
+!MESSAGE classpath=79 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.261
+!MESSAGE buffering callback sts4.classpath.XlOkUbAt project false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.263
+!MESSAGE executing callback sts4.classpath.XlOkUbAt 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:19.728
+!MESSAGE executing callback sts4.classpath.XlOkUbAt SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-03-29 11:27:31.926
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:39.972
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XlOkUbAt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:39.973
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.XlOkUbAt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:39.975
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:27:39.976
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.XlOkUbAt => OK
+!SESSION 2022-03-29 11:52:44.758 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -data C:\Users\itsok\Desktop\MLP full-stack\MLP_FinalProject\project\MLP_finalproject\project_boot -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-03-29 11:52:51.114
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 11:52:51.114
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4c8afba,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@cae4952,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 11:52:51.114
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@79aba813,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@20a18cc9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:52:57.634
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:52:57.637
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@6a73d9ea[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:52:57.645
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:52:57.691
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-29 11:52:59.602
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\itsok'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2022-03-29 11:53:04.697
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.526
+!MESSAGE Boot LS startup time from start to initialized: 7863ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.805
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lLjXFezUisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.816
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.823
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.826
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.828
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.829
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.lLjXFezU => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.885
+!MESSAGE classpath=79 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.904
+!MESSAGE buffering callback sts4.classpath.lLjXFezU project false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:05.905
+!MESSAGE executing callback sts4.classpath.lLjXFezU 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:53:06.458
+!MESSAGE executing callback sts4.classpath.lLjXFezU SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:54:31.808
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.lLjXFezU
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:54:31.809
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.lLjXFezU
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:54:31.811
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 11:54:31.813
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.lLjXFezU => OK
+!SESSION 2022-03-29 12:28:51.615 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-03-29 12:29:11.254
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 12:29:11.254
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@127320df,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6c3884f5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 12:29:11.254
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6778636f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2dbf8cfc,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:16.200
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:16.201
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@534109cd[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:16.205
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:16.243
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-29 12:29:17.649
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\itsok'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2022-03-29 12:29:20.772
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.456
+!MESSAGE Boot LS startup time from start to initialized: 6237ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.801
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.doDDxzMRisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.806
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.814
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.817
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.818
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.doDDxzMR => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.818
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.846
+!MESSAGE classpath=79 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.859
+!MESSAGE buffering callback sts4.classpath.doDDxzMR project false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:22.860
+!MESSAGE executing callback sts4.classpath.doDDxzMR 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:23.688
+!MESSAGE executing callback sts4.classpath.doDDxzMR SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:55.680
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.doDDxzMR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:55.681
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.doDDxzMR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:55.682
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 12:29:55.683
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.doDDxzMR => OK
+!SESSION 2022-03-29 15:03:02.123 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-03-29 15:03:15.800
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 15:03:15.800
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6cfac0bd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@549debdb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 15:03:15.800
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1edf52e6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ab06829,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:20.824
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:20.826
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@22e8f93e[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:20.835
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:20.875
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-29 15:03:22.873
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\itsok'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.006
+!MESSAGE Boot LS startup time from start to initialized: 6160ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.134
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qyschQTeisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.138
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.142
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.144
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.145
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.qyschQTe => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.146
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.172
+!MESSAGE classpath=79 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.183
+!MESSAGE buffering callback sts4.classpath.qyschQTe project false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.184
+!MESSAGE executing callback sts4.classpath.qyschQTe 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:03:27.657
+!MESSAGE executing callback sts4.classpath.qyschQTe SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-03-29 15:06:14.800
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:18:29.443
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qyschQTe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:18:29.445
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.qyschQTe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:18:29.446
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 15:18:29.447
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.qyschQTe => OK
+!SESSION 2022-03-29 16:16:09.673 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-03-29 16:16:23.355
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 16:16:23.355
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7891742e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2bbaf983,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 16:16:23.355
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@781bd9dd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1cc42abe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:28.449
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:28.450
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7030fc5a[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:28.454
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:28.487
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-29 16:16:29.978
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\itsok'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.664
+!MESSAGE Boot LS startup time from start to initialized: 5200ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.801
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.awfPfQSsisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.805
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.808
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.809
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.810
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.811
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.awfPfQSs => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.824
+!MESSAGE classpath=79 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.834
+!MESSAGE buffering callback sts4.classpath.awfPfQSs project false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:33.835
+!MESSAGE executing callback sts4.classpath.awfPfQSs 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:16:34.546
+!MESSAGE executing callback sts4.classpath.awfPfQSs SUCCESS [done]
+
+!ENTRY org.eclipse.buildship.core 2 2 2022-03-29 16:18:20.527
+!MESSAGE Initialize project MLPproject, Update preview failed due to an error in the referenced Gradle build.
+!STACK 0
+org.gradle.tooling.BuildException: Could not execute build using connection to Gradle distribution 'https://services.gradle.org/distributions/gradle-6.8-bin.zip'.
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:51)
+	at org.gradle.tooling.internal.consumer.ExceptionTransformer.transform(ExceptionTransformer.java:29)
+	at org.gradle.tooling.internal.consumer.ResultHandlerAdapter.onFailure(ResultHandlerAdapter.java:43)
+	at org.gradle.tooling.internal.consumer.async.DefaultAsyncConsumerActionExecutor$1$1.run(DefaultAsyncConsumerActionExecutor.java:69)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+	at org.gradle.tooling.internal.consumer.BlockingResultHandler.getResult(BlockingResultHandler.java:46)
+	at org.gradle.tooling.internal.consumer.DefaultBuildLauncher.run(DefaultBuildLauncher.java:83)
+	at org.eclipse.buildship.core.internal.workspace.InitializeNewProjectOperation.initProjectIfNotExists(InitializeNewProjectOperation.java:60)
+	at org.eclipse.buildship.core.internal.workspace.InitializeNewProjectOperation.runInToolingApi(InitializeNewProjectOperation.java:45)
+	at org.eclipse.buildship.core.internal.operation.ToolingApiOperations$1.runInToolingApi(ToolingApiOperations.java:55)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager$WorkspaceRunnableAdapter.run(DefaultToolingApiOperationManager.java:58)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2338)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:39)
+	at org.eclipse.buildship.core.internal.operation.DefaultToolingApiOperationManager.run(DefaultToolingApiOperationManager.java:33)
+	at org.eclipse.buildship.ui.internal.wizard.project.ProjectPreviewWizardPage$4.run(ProjectPreviewWizardPage.java:311)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.gradle.internal.exceptions.LocationAwareException: Initialization script 'C:\Users\itsok\Desktop\MLP full-stack\MLP_FinalProject\project\dddd\MLP_finalproject\project_boot\.metadata\.plugins\org.eclipse.buildship.core\init.d\eclipsePlugin.gradle'
+Could not compile initialization script 'C:\Users\itsok\Desktop\MLP full-stack\MLP_FinalProject\project\dddd\MLP_finalproject\project_boot\.metadata\.plugins\org.eclipse.buildship.core\init.d\eclipsePlugin.gradle'.
+	at org.gradle.initialization.exception.DefaultExceptionAnalyser.transform(DefaultExceptionAnalyser.java:103)
+	at org.gradle.initialization.exception.DefaultExceptionAnalyser.collectFailures(DefaultExceptionAnalyser.java:67)
+	at org.gradle.initialization.exception.MultipleBuildFailuresExceptionAnalyser.transform(MultipleBuildFailuresExceptionAnalyser.java:48)
+	at org.gradle.initialization.exception.StackTraceSanitizingExceptionAnalyser.transform(StackTraceSanitizingExceptionAnalyser.java:30)
+	at org.gradle.initialization.DefaultGradleLauncher.finishBuild(DefaultGradleLauncher.java:188)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:151)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:124)
+	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:72)
+	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:67)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:213)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:67)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:56)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:56)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:63)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:77)
+	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:49)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:44)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:44)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.lambda$execute$0(InProcessBuildActionExecuter.java:54)
+	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:53)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:29)
+	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.lambda$execute$0(BuildTreeScopeLifecycleBuildActionExecuter.java:33)
+	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:49)
+	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:32)
+	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:27)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:104)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:55)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:64)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:37)
+	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.lambda$execute$0(SessionScopeLifecycleBuildActionExecuter.java:54)
+	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:67)
+	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:50)
+	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:31)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:55)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:41)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:47)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:31)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:65)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.create(ForwardClientInput.java:78)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.create(ForwardClientInput.java:75)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:75)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:297)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+Caused by: org.gradle.groovy.scripts.ScriptCompilationException: Could not compile initialization script 'C:\Users\itsok\Desktop\MLP full-stack\MLP_FinalProject\project\dddd\MLP_finalproject\project_boot\.metadata\.plugins\org.eclipse.buildship.core\init.d\eclipsePlugin.gradle'.
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.wrapCompilationFailure(DefaultScriptCompilationHandler.java:192)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:141)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileToDir(DefaultScriptCompilationHandler.java:95)
+	at org.gradle.groovy.scripts.internal.BuildOperationBackedScriptCompilationHandler$2.run(BuildOperationBackedScriptCompilationHandler.java:54)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.groovy.scripts.internal.BuildOperationBackedScriptCompilationHandler.compileToDir(BuildOperationBackedScriptCompilationHandler.java:51)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CompileToCrossBuildCacheAction.execute(FileCacheBackedScriptClassCompiler.java:190)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CompileToCrossBuildCacheAction.execute(FileCacheBackedScriptClassCompiler.java:170)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:211)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:194)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryCache$Initializer.initialize(DefaultPersistentDirectoryCache.java:100)
+	at org.gradle.cache.internal.FixedSharedModeCrossProcessCacheAccess$1.run(FixedSharedModeCrossProcessCacheAccess.java:86)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.doWriteAction(DefaultFileLockManager.java:215)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.writeFile(DefaultFileLockManager.java:205)
+	at org.gradle.cache.internal.FixedSharedModeCrossProcessCacheAccess.open(FixedSharedModeCrossProcessCacheAccess.java:83)
+	at org.gradle.cache.internal.DefaultCacheAccess.open(DefaultCacheAccess.java:139)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:89)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:43)
+	at org.gradle.cache.internal.DefaultCacheFactory.doOpen(DefaultCacheFactory.java:103)
+	at org.gradle.cache.internal.DefaultCacheFactory.open(DefaultCacheFactory.java:68)
+	at org.gradle.cache.internal.DefaultCacheRepository$PersistentCacheBuilder.open(DefaultCacheRepository.java:126)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler.compile(FileCacheBackedScriptClassCompiler.java:116)
+	at org.gradle.groovy.scripts.internal.CrossBuildInMemoryCachingScriptClassCache.getOrCompile(CrossBuildInMemoryCachingScriptClassCache.java:50)
+	at org.gradle.groovy.scripts.internal.BuildScopeInMemoryCachingScriptClassCompiler.compile(BuildScopeInMemoryCachingScriptClassCompiler.java:50)
+	at org.gradle.groovy.scripts.DefaultScriptCompilerFactory$ScriptCompilerImpl.compile(DefaultScriptCompilerFactory.java:49)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:110)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:65)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.configuration.BuildOperationScriptPlugin.lambda$apply$0(BuildOperationScriptPlugin.java:62)
+	at org.gradle.configuration.internal.DefaultUserCodeApplicationContext.apply(DefaultUserCodeApplicationContext.java:43)
+	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:62)
+	at org.gradle.configuration.DefaultInitScriptProcessor.process(DefaultInitScriptProcessor.java:50)
+	at org.gradle.initialization.InitScriptHandler$1.run(InitScriptHandler.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.initialization.InitScriptHandler.executeScripts(InitScriptHandler.java:51)
+	at org.gradle.initialization.DefaultSettingsPreparer.prepareSettings(DefaultSettingsPreparer.java:33)
+	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.doLoadBuild(BuildOperationFiringSettingsPreparer.java:62)
+	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.run(BuildOperationFiringSettingsPreparer.java:57)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.initialization.BuildOperationFiringSettingsPreparer.prepareSettings(BuildOperationFiringSettingsPreparer.java:45)
+	at org.gradle.initialization.DefaultGradleLauncher.prepareSettings(DefaultGradleLauncher.java:218)
+	at org.gradle.initialization.DefaultGradleLauncher.doClassicBuildStages(DefaultGradleLauncher.java:159)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:148)
+	... 77 more
+Caused by: org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+General error during semantic analysis: Unsupported class file major version 61
+
+java.lang.IllegalArgumentException: Unsupported class file major version 61
+	at groovyjarjarasm.asm.ClassReader.<init>(ClassReader.java:196)
+	at groovyjarjarasm.asm.ClassReader.<init>(ClassReader.java:177)
+	at groovyjarjarasm.asm.ClassReader.<init>(ClassReader.java:163)
+	at groovyjarjarasm.asm.ClassReader.<init>(ClassReader.java:284)
+	at org.codehaus.groovy.ast.decompiled.AsmDecompiler.parseClass(AsmDecompiler.java:81)
+	at org.codehaus.groovy.control.ClassNodeResolver.findDecompiled(ClassNodeResolver.java:251)
+	at org.codehaus.groovy.control.ClassNodeResolver.tryAsLoaderClassOrScript(ClassNodeResolver.java:189)
+	at org.codehaus.groovy.control.ClassNodeResolver.findClassNode(ClassNodeResolver.java:169)
+	at org.codehaus.groovy.control.ClassNodeResolver.resolveName(ClassNodeResolver.java:125)
+	at org.codehaus.groovy.ast.decompiled.AsmReferenceResolver.resolveClassNullable(AsmReferenceResolver.java:57)
+	at org.codehaus.groovy.ast.decompiled.AsmReferenceResolver.resolveClass(AsmReferenceResolver.java:44)
+	at org.codehaus.groovy.ast.decompiled.AsmReferenceResolver.resolveNonArrayType(AsmReferenceResolver.java:79)
+	at org.codehaus.groovy.ast.decompiled.AsmReferenceResolver.resolveType(AsmReferenceResolver.java:70)
+	at org.codehaus.groovy.ast.decompiled.MemberSignatureParser.createMethodNode(MemberSignatureParser.java:57)
+	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode$2.get(DecompiledClassNode.java:234)
+	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode$2.get(DecompiledClassNode.java:231)
+	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode.createMethodNode(DecompiledClassNode.java:242)
+	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode.lazyInitMembers(DecompiledClassNode.java:199)
+	at org.codehaus.groovy.ast.decompiled.DecompiledClassNode.getDeclaredMethods(DecompiledClassNode.java:122)
+	at org.codehaus.groovy.ast.ClassNode.getMethods(ClassNode.java:912)
+	at org.codehaus.groovy.ast.ClassNode.tryFindPossibleMethod(ClassNode.java:1280)
+	at org.codehaus.groovy.control.StaticImportVisitor.transformMethodCallExpression(StaticImportVisitor.java:252)
+	at org.codehaus.groovy.control.StaticImportVisitor.transform(StaticImportVisitor.java:113)
+	at org.codehaus.groovy.ast.ClassCodeExpressionTransformer.visitExpressionStatement(ClassCodeExpressionTransformer.java:142)
+	at org.codehaus.groovy.ast.stmt.ExpressionStatement.visit(ExpressionStatement.java:40)
+	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitClassCodeContainer(ClassCodeVisitorSupport.java:110)
+	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitConstructorOrMethod(ClassCodeVisitorSupport.java:121)
+	at org.codehaus.groovy.ast.ClassCodeExpressionTransformer.visitConstructorOrMethod(ClassCodeExpressionTransformer.java:53)
+	at org.codehaus.groovy.control.StaticImportVisitor.visitConstructorOrMethod(StaticImportVisitor.java:89)
+	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitConstructor(ClassCodeVisitorSupport.java:128)
+	at org.codehaus.groovy.ast.ClassNode.visitContents(ClassNode.java:1099)
+	at org.codehaus.groovy.ast.ClassCodeVisitorSupport.visitClass(ClassCodeVisitorSupport.java:54)
+	at org.codehaus.groovy.control.StaticImportVisitor.visitClass(StaticImportVisitor.java:83)
+	at org.codehaus.groovy.control.CompilationUnit$14.call(CompilationUnit.java:708)
+	at org.codehaus.groovy.control.CompilationUnit.applyToPrimaryClassNodes(CompilationUnit.java:1084)
+	at org.codehaus.groovy.control.CompilationUnit.doPhaseOperation(CompilationUnit.java:640)
+	at org.codehaus.groovy.control.CompilationUnit.processPhaseOperations(CompilationUnit.java:618)
+	at org.codehaus.groovy.control.CompilationUnit.compile(CompilationUnit.java:595)
+	at groovy.lang.GroovyClassLoader.doParseClass(GroovyClassLoader.java:401)
+	at groovy.lang.GroovyClassLoader.access$300(GroovyClassLoader.java:89)
+	at groovy.lang.GroovyClassLoader$5.provide(GroovyClassLoader.java:341)
+	at groovy.lang.GroovyClassLoader$5.provide(GroovyClassLoader.java:338)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:147)
+	at groovy.lang.GroovyClassLoader.parseClass(GroovyClassLoader.java:336)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:139)
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileToDir(DefaultScriptCompilationHandler.java:95)
+	at org.gradle.groovy.scripts.internal.BuildOperationBackedScriptCompilationHandler$2.run(BuildOperationBackedScriptCompilationHandler.java:54)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.groovy.scripts.internal.BuildOperationBackedScriptCompilationHandler.compileToDir(BuildOperationBackedScriptCompilationHandler.java:51)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CompileToCrossBuildCacheAction.execute(FileCacheBackedScriptClassCompiler.java:190)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$CompileToCrossBuildCacheAction.execute(FileCacheBackedScriptClassCompiler.java:170)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:211)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler$ProgressReportingInitializer.execute(FileCacheBackedScriptClassCompiler.java:194)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryCache$Initializer.initialize(DefaultPersistentDirectoryCache.java:100)
+	at org.gradle.cache.internal.FixedSharedModeCrossProcessCacheAccess$1.run(FixedSharedModeCrossProcessCacheAccess.java:86)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.doWriteAction(DefaultFileLockManager.java:215)
+	at org.gradle.cache.internal.DefaultFileLockManager$DefaultFileLock.writeFile(DefaultFileLockManager.java:205)
+	at org.gradle.cache.internal.FixedSharedModeCrossProcessCacheAccess.open(FixedSharedModeCrossProcessCacheAccess.java:83)
+	at org.gradle.cache.internal.DefaultCacheAccess.open(DefaultCacheAccess.java:139)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:89)
+	at org.gradle.cache.internal.DefaultPersistentDirectoryStore.open(DefaultPersistentDirectoryStore.java:43)
+	at org.gradle.cache.internal.DefaultCacheFactory.doOpen(DefaultCacheFactory.java:103)
+	at org.gradle.cache.internal.DefaultCacheFactory.open(DefaultCacheFactory.java:68)
+	at org.gradle.cache.internal.DefaultCacheRepository$PersistentCacheBuilder.open(DefaultCacheRepository.java:126)
+	at org.gradle.groovy.scripts.internal.FileCacheBackedScriptClassCompiler.compile(FileCacheBackedScriptClassCompiler.java:116)
+	at org.gradle.groovy.scripts.internal.CrossBuildInMemoryCachingScriptClassCache.getOrCompile(CrossBuildInMemoryCachingScriptClassCache.java:50)
+	at org.gradle.groovy.scripts.internal.BuildScopeInMemoryCachingScriptClassCompiler.compile(BuildScopeInMemoryCachingScriptClassCompiler.java:50)
+	at org.gradle.groovy.scripts.DefaultScriptCompilerFactory$ScriptCompilerImpl.compile(DefaultScriptCompilerFactory.java:49)
+	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:110)
+	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:65)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.configuration.BuildOperationScriptPlugin.lambda$apply$0(BuildOperationScriptPlugin.java:62)
+	at org.gradle.configuration.internal.DefaultUserCodeApplicationContext.apply(DefaultUserCodeApplicationContext.java:43)
+	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:62)
+	at org.gradle.configuration.DefaultInitScriptProcessor.process(DefaultInitScriptProcessor.java:50)
+	at org.gradle.initialization.InitScriptHandler$1.run(InitScriptHandler.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.initialization.InitScriptHandler.executeScripts(InitScriptHandler.java:51)
+	at org.gradle.initialization.DefaultSettingsPreparer.prepareSettings(DefaultSettingsPreparer.java:33)
+	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.doLoadBuild(BuildOperationFiringSettingsPreparer.java:62)
+	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.run(BuildOperationFiringSettingsPreparer.java:57)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+	at org.gradle.initialization.BuildOperationFiringSettingsPreparer.prepareSettings(BuildOperationFiringSettingsPreparer.java:45)
+	at org.gradle.initialization.DefaultGradleLauncher.prepareSettings(DefaultGradleLauncher.java:218)
+	at org.gradle.initialization.DefaultGradleLauncher.doClassicBuildStages(DefaultGradleLauncher.java:159)
+	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:148)
+	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:124)
+	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:72)
+	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:67)
+	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:213)
+	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:67)
+	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:56)
+	at org.gradle.tooling.internal.provider.runner.BuildModelActionRunner.run(BuildModelActionRunner.java:56)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:63)
+	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:77)
+	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:49)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:44)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
+	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
+	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:44)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.lambda$execute$0(InProcessBuildActionExecuter.java:54)
+	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:86)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:53)
+	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:29)
+	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.lambda$execute$0(BuildTreeScopeLifecycleBuildActionExecuter.java:33)
+	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:49)
+	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:32)
+	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:27)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:104)
+	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:55)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:64)
+	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:37)
+	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.lambda$execute$0(SessionScopeLifecycleBuildActionExecuter.java:54)
+	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:67)
+	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:50)
+	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:59)
+	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:31)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:55)
+	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:41)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:47)
+	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:31)
+	at org.gradle.launcher.daemon.server.exec.ExecuteBuild.doBuild(ExecuteBuild.java:65)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.WatchForDisconnection.execute(WatchForDisconnection.java:39)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ResetDeprecationLogger.execute(ResetDeprecationLogger.java:29)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon.execute(RequestStopIfSingleUsedDaemon.java:35)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.create(ForwardClientInput.java:78)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput$2.create(ForwardClientInput.java:75)
+	at org.gradle.util.Swapper.swap(Swapper.java:38)
+	at org.gradle.launcher.daemon.server.exec.ForwardClientInput.execute(ForwardClientInput.java:75)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogAndCheckHealth.execute(LogAndCheckHealth.java:55)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.LogToClient.doBuild(LogToClient.java:63)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment.doBuild(EstablishBuildEnvironment.java:84)
+	at org.gradle.launcher.daemon.server.exec.BuildCommandOnly.execute(BuildCommandOnly.java:37)
+	at org.gradle.launcher.daemon.server.api.DaemonCommandExecution.proceed(DaemonCommandExecution.java:104)
+	at org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy$1.run(StartBuildOrRespondWithBusy.java:52)
+	at org.gradle.launcher.daemon.server.DaemonStateCoordinator$1.run(DaemonStateCoordinator.java:297)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+1 error
+
+	at org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler.compileScript(DefaultScriptCompilationHandler.java:139)
+	... 154 more
+
+!ENTRY org.eclipse.ui 2 2 2022-03-29 16:18:57.661
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:24:56.133
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.awfPfQSs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:24:56.134
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.awfPfQSs
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:24:56.136
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:24:56.137
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.awfPfQSs => OK
+!SESSION 2022-03-29 16:34:59.787 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY org.eclipse.jface 2 0 2022-03-29 16:35:07.937
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 16:35:07.938
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6a26eee6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4be1c797,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-03-29 16:35:07.938
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76bdfc19,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1248f83,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:12.927
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:12.928
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@30184a6a[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:12.933
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:12.971
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-03-29 16:35:14.568
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\itsok'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.269
+!MESSAGE Boot LS startup time from start to initialized: 5324ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.398
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.HtgiAXsOisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.403
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.407
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.408
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.409
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.HtgiAXsO => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.410
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.427
+!MESSAGE classpath=79 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.437
+!MESSAGE buffering callback sts4.classpath.HtgiAXsO project false 79
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.438
+!MESSAGE executing callback sts4.classpath.HtgiAXsO 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 16:35:18.928
+!MESSAGE executing callback sts4.classpath.HtgiAXsO SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-03-29 16:36:07.188
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.eclipse.lsp4e 2 0 2022-03-29 17:08:06.626
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:70)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 17:17:22.842
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.HtgiAXsO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 17:17:22.846
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.HtgiAXsO
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 17:17:22.849
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-03-29 17:17:22.851
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.HtgiAXsO => OK

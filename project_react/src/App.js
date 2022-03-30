@@ -1,42 +1,39 @@
-import React from "react";
-import {
-  Route,
-  Routes,
-  unstable_HistoryRouter as HistoryRouter,
-} from "react-router-dom";
-import { createBrowserHistory } from "history";
-import Main from "./pages/Main";
-import HeaderAside from "./components/HeaderAside";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Seoul from "./pages/Seoul";
-import Detail from "./pages/Detail";
-import { useDispatch } from "react-redux";
-import { actionCreators as userActions } from "../src/redux/modules/user";
-export const history = createBrowserHistory();
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import MainRouter from './Routers/MainRouter';
+import ResetStyle from './style/ResetStyle';
+import { setIsLoggedIn } from './Modules/user';
+
+const checkCookie = cname => {
+  const name = `${cname}=`;
+  const decodedCookies = decodeURIComponent(document.cookie);
+  const cookieArr = decodedCookies.split(';');
+  for (let i = 0; i < cookieArr.length; i++) {
+    let c = cookieArr[i];
+    while (c.charAt(0) === ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) === 0) {
+      return true;
+    }
+  }
+  return false;
+};
 
 function App() {
   const dispatch = useDispatch();
-
-  const is_session = localStorage.getItem("token");
-
-  React.useEffect(() => {
-    if (is_session) {
-      dispatch(userActions.loginCheckDB());
+  const { isLoggedIn } = useSelector(state => state.user);
+  useEffect(() => {
+    if (!isLoggedIn && checkCookie('AirdndSES')) {
+      dispatch(setIsLoggedIn(true));
     }
-  }, []);
+  }, [isLoggedIn]);
 
   return (
-    <HistoryRouter history={history}>
-      <HeaderAside />
-      <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/location" element={<Seoul />} />
-        <Route path="/detail/:placeId" element={<Detail />} />
-      </Routes>
-      <Footer />
-    </HistoryRouter>
+    <>
+      <MainRouter />
+      <ResetStyle />
+    </>
   );
 }
 
