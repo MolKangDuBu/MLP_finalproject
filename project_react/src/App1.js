@@ -18,7 +18,9 @@ import BoardWrite from'./component/board/board_write';
 import BoardView from'./component/board/board_view';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Searchlist from './component/search/searchlist';
+import Listview from './component/search/listview';
+import Payment from './component/search/payment'
 function App() {
   return (
     <div className="container">
@@ -33,6 +35,9 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="counter" element={<Counter />} />
+            <Route path="searchlist" element={<Searchlist />} />
+            <Route path = "listview" element={<Listview/>} />
+            <Route path = "payment" element={<Payment/>}/>
 
             <Route path="page1" element={<Page1 />} />
             <Route path="page2" element={<Page2 />} />
