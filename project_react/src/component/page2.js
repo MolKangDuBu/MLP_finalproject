@@ -56,7 +56,7 @@ function Page2() {
                 </ul>
                 <div className="tab-content clearfix">
                 	
-                    /
+                  
                     <div className="tab-pane fade" id="1a">
                         <div className="tm-recommended-place-wrap">
                             <div className="tm-recommended-place">

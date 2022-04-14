@@ -499,7 +499,11 @@ footer p { color: white; }
     font-weight: 600;
 }
 
-#google-map { height: 600px; }
+#google-map { 
+    height: 400px; 
+    text-align: center;
+    margin :0 auto;
+}
 
 @media screen and (max-width: 1080px) {
     .tm-tab-link-li { width: 25%; }
