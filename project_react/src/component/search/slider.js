@@ -6,7 +6,7 @@ import axios from 'axios';
 export default class SimpleSlider extends Component {
 
   
-
+//PR test
   render() {
     console.log(this.props)
 
