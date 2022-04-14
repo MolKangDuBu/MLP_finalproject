@@ -16,6 +16,8 @@ function Listview(props) {
 
     let history = useNavigate ();
     const data = useLocation();
+    const [houseimage, setImage] = useState([]);
+    const [facility, setFac] = useState([]);
     const [loading, setLoading] = useState(false);
     const [house, sethouse] = useState({
         house_id: "",
@@ -27,8 +29,7 @@ function Listview(props) {
         house_address1: "",
         house_address2: "",
         house_pay: "",
-        user_id: "",
-        image: "",
+        user_id: ""
 
     });
     const [datediff, setdiff] = useState();
@@ -51,10 +52,28 @@ function Listview(props) {
                 console.log('1111:', res);
                 sethouse(res.data.list);
                 setLoading(false);
-               
-
+                loadImage();
+                loadfacility();
             })
 
+    }
+
+    const loadImage = async () => {        
+        await axios.get(`http://localhost:9090/search/image/${house.house_id}`)
+            .then((res) => {
+                console.log('222:', res);
+                setImage(res.data.list);
+
+            })
+    }
+
+    const loadfacility = async () => {        
+        await axios.get(`http://localhost:9090/search/facility/${house.house_id}`)
+            .then((res) => {
+                console.log('333:', res);
+                setFac(res.data.list);
+
+            })
     }
 
     const booking = async ()=>{
@@ -89,8 +108,6 @@ function Listview(props) {
         console.log('222', data.state);
         loadData();
     }, []);
-
-
 
     useEffect(()=>{
         console.log("dd", date);
@@ -153,10 +170,10 @@ function Listview(props) {
                                         <hr></hr>
                                         <div>
                                             <h3>편의 시설</h3>
-                                            <p>여기에 편의시설들 </p>
+                                            <p>{facility} </p>
                                         </div>
                                         <hr></hr>
-                                        <div className="form-group"><SimpleSlider key="image" /></div>
+                                        <div className="form-group"><SimpleSlider id={houseimage} /></div>
                                         <br></br>
                                         <hr></hr>
                                         <div className="form-row tm-search-form-row">
