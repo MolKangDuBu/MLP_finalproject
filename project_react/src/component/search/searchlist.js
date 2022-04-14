@@ -18,23 +18,6 @@ function Searchlist() {
     const data = useLocation();
     const guest = parseInt(data.state.adult) + parseInt(data.state.children);
 
-    // function initMap() {
-
-    //     const map = new google.maps.Map(document.getElementById("map"), {
-    //         zoom: 14,
-    //         center: { lat: 37.5407622, lng: 127.0706095 },
-    //     });
-
-    //     for (var i = 0; i < locations.length; i++) {
-    //         var marker = new google.maps.Marker({
-    //             map: map,
-    //             label: locations[i].place,
-    //             position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
-    //         });
-    //     }
-    // }
-
-
     const loadData = async (page) => {
         setLoading(true);
         // const res = await Axios.get(`http://localhost:9090/search/${data.state.room}/${data.state.destination}`);
@@ -86,7 +69,7 @@ function Searchlist() {
                                         <p className="tm-text-gray">{e.house_contents}</p>
                                     </div>
                                     <a href="#none" className="tm-recommended-price-box">
-                                        <p className="tm-recommended-price">{e.house_pay}</p>
+                                        <p className="tm-recommended-price">{e.house_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                                         <Link to={`/listview`} state={{ id: e.house_id }}><p className="tm-recommended-price-link">Continue Reading</p></Link>
                                     </a>
                                 </div>
@@ -101,13 +84,11 @@ function Searchlist() {
 
                 </div>
             </div>
-            <div>
+            <div className="form-row tm-search-form-row">
                 {/* <Mapcontent/> */}
-                <Map />
+                 <Map destination={data.state.destination}/>
             </div>
-            {/* <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOmFnHASzr_qBQr67763k9CJC_RhOBh_4&callback=initMap&libraries=&v=weekly"
-        async></script> */}
+    
         </div>
         
     );

@@ -8,8 +8,12 @@ import SimpleSlider from "./slider";
 import { ko } from "date-fns/esm/locale"
 import { DateRange } from 'react-date-range';
 import Mapcontent from './mapcontent';
+import Map from './testmap';
+
 
 function Listview(props) {
+    const childFunc = React.useRef(null);
+
     let history = useNavigate ();
     const data = useLocation();
     const [loading, setLoading] = useState(false);
@@ -47,6 +51,8 @@ function Listview(props) {
                 console.log('1111:', res);
                 sethouse(res.data.list);
                 setLoading(false);
+               
+
             })
 
     }
@@ -78,15 +84,13 @@ function Listview(props) {
             });
     }
 
+
     useEffect(() => {
         console.log('222', data.state);
         loadData();
     }, []);
 
-    useEffect(() => {
-        console.log('[house]', house);
-        console.log('[house_id]', house.house_id);
-    }, [house])
+
 
     useEffect(()=>{
         console.log("dd", date);
@@ -106,7 +110,7 @@ function Listview(props) {
         const datediff = Math.ceil((last.getTime()-start.getTime())/(1000*3600*24));
         // console.log("diff", datediff);
         setdiff(datediff+1);
-        setpay(house.house_pay *(datediff+1));
+        setpay((house.house_pay *(datediff+1)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));
     }
 
     return (
@@ -141,14 +145,14 @@ function Listview(props) {
                                         <hr></hr>
                                         <div className="form-row tm-search-form-row">
                                             <div>
-                                                <h2>숙소 설명</h2>
+                                                <h3>숙소 설명</h3>
                                                 <p>{house.house_contents}</p>
-                                                <p>1박당 비용 : {house.house_pay}</p>
+                                                <p>1박당 비용 : {house.house_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
                                             </div>
                                         </div>
                                         <hr></hr>
                                         <div>
-                                            <h2>편의 시설</h2>
+                                            <h3>편의 시설</h3>
                                             <p>여기에 편의시설들 </p>
                                         </div>
                                         <hr></hr>
@@ -181,7 +185,7 @@ function Listview(props) {
                                             <div className="form-group tm-form-group tm-form-group-pad">
                                                 <label for="btnSubmit">예약 정보를 다시 확인해주세요.&nbsp;</label>
                                                 <div className="form-group ">
-                                                <label for="btnSubmit">결제 금액 : {pay}</label>
+                                                <label for="btnSubmit">결제 금액 : {pay}원</label>
                                             </div>
                                                 {/* <Link to={'/payment'} state={{ house_info: house,
                                                  checkin : date[0].startDate.getFullYear().toString()+"."+
@@ -196,10 +200,14 @@ function Listview(props) {
 
                                         </div>
                                         <div className="form-row tm-search-form-row">
-                                            <h2>호스팅 지역</h2>
+                                            <h3>호스팅 지역</h3>
                                         </div>
                                         <div>{house.house_address1} {house.house_address2}</div>
                                         {/* <Mapcontent/> */}
+                                        <Map destination={house.house_address1}/>
+                                      
+                                       {/* <Map childFunc = {childFunc} destination={house.house_address1}></Map>
+                                       <button type = "button" onClick={()=> childFunc.current("Aaaa")}>ddd</button>   */}
                                         <hr></hr>
                                     </form>
 

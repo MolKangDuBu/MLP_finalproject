@@ -11,7 +11,10 @@ import Dashboard from'./component/dashboard';
 import Counter from'./component/counter';
 import Page1 from './component/page1';
 import Page2 from './component/page2';
-import HelpCenter from './component/helpcenter';
+import HelpCenter from './component/help/helpcenter';
+import HelpWrite from './component/help/helpcenter_write'
+import HelpView from './component/help/helpcenter_view'
+
 import FooterComponent from './component/footer';
 import BoardList from'./component/board/board_list';
 import BoardWrite from'./component/board/board_write';
@@ -21,6 +24,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Searchlist from './component/search/searchlist';
 import Listview from './component/search/listview';
 import Payment from './component/search/payment'
+
+
 function App() {
   return (
     <div className="container">
@@ -41,7 +46,9 @@ function App() {
 
             <Route path="page1" element={<Page1 />} />
             <Route path="page2" element={<Page2 />} />
-            <Route path="help" element={<HelpCenter />} />
+            <Route path="help"  element={<HelpCenter />} />
+            <Route path="help/write"  element={<HelpWrite />} />
+            <Route path="help/view/:id"  element={<HelpView />} />
 
             <Route path="board" element={<BoardList />} />
             <Route path="board/write" element={<BoardWrite/>}/>
@@ -76,7 +83,7 @@ function Layout() {
                     <div className="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a className="navbar-brand mr-auto" href="#">
-                                <img src="../img/logo.png" alt="Site logo"/>
+                            <NavLink to="/"><img src="../img/logo.png" alt="Site logo"/></NavLink> 
                                 Journey
                             </a>
                             <button type="button" id="nav-toggle" className="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
