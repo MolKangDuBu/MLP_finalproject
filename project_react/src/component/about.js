@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import React, { useState } from "react";
 
@@ -26,3 +27,6 @@ export default About;
 //     [name]: value // name 키를 가진 값을 value 로 설정
 //   });
 // };
+=======
+
+>>>>>>> e89216683771aa25db4bbf2bd479bb59d28908b3

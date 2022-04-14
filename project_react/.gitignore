@@ -22,8 +22,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+<<<<<<< HEAD
 # API KEY
 .env
 
 #node
+=======
+>>>>>>> e89216683771aa25db4bbf2bd479bb59d28908b3
 node_modules/
