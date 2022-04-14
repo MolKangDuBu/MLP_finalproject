@@ -8,27 +8,16 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
-<<<<<<< HEAD
     "dotenv": "^16.0.0",
-=======
->>>>>>> e89216683771aa25db4bbf2bd479bb59d28908b3
     "google-map-react": "^2.1.10",
     "google-maps-react": "^2.0.6",
     "react": "^17.0.2",
-    "react-date-range": "^1.4.0",
-    "react-datepicker": "^4.7.0",
     "react-dom": "^17.0.2",
     "react-geocode": "^0.2.3",
     "react-intersection-observer": "^8.33.1",
     "react-js-pagination": "^3.0.3",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
-<<<<<<< HEAD
-=======
-    "react-slick": "^0.28.1",
-    "react_datepicker": "^1.0.0",
-    "slick-carousel": "^1.8.1",
->>>>>>> e89216683771aa25db4bbf2bd479bb59d28908b3
     "web-vitals": "^2.1.2"
   },
   "scripts": {

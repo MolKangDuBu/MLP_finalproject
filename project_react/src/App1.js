@@ -11,29 +11,15 @@ import Dashboard from'./component/dashboard';
 import Counter from'./component/counter';
 import Page1 from './component/page1';
 import Page2 from './component/page2';
-<<<<<<< HEAD
 import HelpCenter from './component/helpcenter';
-=======
-import HelpCenter from './component/help/helpcenter';
-import HelpWrite from './component/help/helpcenter_write'
-import HelpView from './component/help/helpcenter_view'
-
->>>>>>> e89216683771aa25db4bbf2bd479bb59d28908b3
 import FooterComponent from './component/footer';
 import BoardList from'./component/board/board_list';
 import BoardWrite from'./component/board/board_write';
 import BoardView from'./component/board/board_view';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-<<<<<<< HEAD
 import HostRegist from './component/HostRegist';
 import Map2 from './component/Map2';
-=======
-import Searchlist from './component/search/searchlist';
-import Listview from './component/search/listview';
-import Payment from './component/search/payment'
-
->>>>>>> e89216683771aa25db4bbf2bd479bb59d28908b3
 
 function App() {
   return (
@@ -49,24 +35,12 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="counter" element={<Counter />} />
-<<<<<<< HEAD
 
             <Route path="page1" element={<Page1 />} />
             <Route path="page2" element={<Page2 />} />
             <Route path="help" element={<HelpCenter />} />
             <Route path="hostregist" element={<HostRegist />} />
             <Route path="map" element={<Map2 destination={"서울시"}/>} />
-=======
-            <Route path="searchlist" element={<Searchlist />} />
-            <Route path = "listview" element={<Listview/>} />
-            <Route path = "payment" element={<Payment/>}/>
-
-            <Route path="page1" element={<Page1 />} />
-            <Route path="page2" element={<Page2 />} />
-            <Route path="help"  element={<HelpCenter />} />
-            <Route path="help/write"  element={<HelpWrite />} />
-            <Route path="help/view/:id"  element={<HelpView />} />
->>>>>>> e89216683771aa25db4bbf2bd479bb59d28908b3
 
             <Route path="board" element={<BoardList />} />
             <Route path="board/write" element={<BoardWrite/>}/>
@@ -101,11 +75,7 @@ function Layout() {
                     <div className="row">
                         <nav class="navbar navbar-expand-lg narbar-light">
                             <a className="navbar-brand mr-auto" href="#">
-<<<<<<< HEAD
                                 <img src="../img/logo.png" alt="Site logo"/>
-=======
-                            <NavLink to="/"><img src="../img/logo.png" alt="Site logo"/></NavLink> 
->>>>>>> e89216683771aa25db4bbf2bd479bb59d28908b3
                                 Journey
                             </a>
                             <button type="button" id="nav-toggle" className="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,12 +98,9 @@ function Layout() {
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/help">helpcenter</NavLink>
                                     </li>
-<<<<<<< HEAD
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/hostregist">Host Regist</NavLink>
                                     </li>
-=======
->>>>>>> e89216683771aa25db4bbf2bd479bb59d28908b3
                                 </ul>
                             </div>                            
                     </nav>
