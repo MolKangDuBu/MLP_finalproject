@@ -25,6 +25,7 @@ import Searchlist from './component/search/searchlist';
 import Listview from './component/search/listview';
 import Payment from './component/search/payment'
 
+import HostRegist from './component/host/HostRegist';
 
 function App() {
   return (
@@ -53,6 +54,8 @@ function App() {
             <Route path="board" element={<BoardList />} />
             <Route path="board/write" element={<BoardWrite/>}/>
             <Route path="board/view/:id" element={<BoardView/>}/>
+
+            <Route path="hostregist" element={<HostRegist />} />
             
             {/* Using path="*"" means "match anything", so this route
                   acts like a catch-all for URLs that we don't have explicit
@@ -105,6 +108,9 @@ function Layout() {
                                     </li>
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/help">helpcenter</NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" to="/hostregist">Host Regist</NavLink>
                                     </li>
                                 </ul>
                             </div>                            
