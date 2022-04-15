@@ -1,0 +1,26 @@
+  .common-table1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    border-spacing: 0;
+  }
+  
+  .common-table-header-column1 {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0;
+    font-size: 16px;
+    padding: 10px 5px;
+    font-weight: bold;
+
+    
+  }
+  
+  .common-table-row1:hover {
+    background-color: #eceaea;
+    cursor: pointer;
+  }
+  
+  .common-table-column1 {
+    padding: 10px 5px;
+  }
+  

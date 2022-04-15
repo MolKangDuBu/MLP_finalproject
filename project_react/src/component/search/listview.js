@@ -52,31 +52,35 @@ function Listview(props) {
                 console.log('1111:', res);
                 sethouse(res.data.list);
                 setLoading(false);
-                loadImage();
-                loadfacility();
+
             })
 
     }
 
-    const loadImage = async () => {        
-        await axios.get(`http://localhost:9090/search/image/${house.house_id}`)
+    const loadImage = async (e) => {        
+        await axios.get(`http://localhost:9090/search/image/${e}`)
             .then((res) => {
                 console.log('222:', res);
                 setImage(res.data.list);
 
-            })
+            }).catch((error) => {
+                console.log("image : "+error);
+            });
     }
 
-    const loadfacility = async () => {        
-        await axios.get(`http://localhost:9090/search/facility/${house.house_id}`)
+    const loadfacility = async (e) => {        
+        await axios.get(`http://localhost:9090/search/facility/${e}`)
             .then((res) => {
                 console.log('333:', res);
                 setFac(res.data.list);
 
-            })
+            }).catch((error) => {
+                console.log("fac : "+error);
+            });
     }
 
     const booking = async ()=>{
+
         await axios.post("http://localhost:9090/search/booking", {
             params: {
                 house_id :house.house_id,
@@ -86,7 +90,7 @@ function Listview(props) {
                 last : date[0].endDate.getFullYear().toString()+"."+
                 (date[0].endDate.getMonth()+1).toString()+"."+
                 date[0].endDate.getDate().toString(),
-                pay : pay,
+                pay : house.house_pay,
 
             }
         })
@@ -105,8 +109,9 @@ function Listview(props) {
 
 
     useEffect(() => {
-        console.log('222', data.state);
+        
         loadData();
+    
     }, []);
 
     useEffect(()=>{
@@ -115,6 +120,11 @@ function Listview(props) {
        
     }, [date])
 
+    useEffect(()=>{
+        console.log("아니 왜 ");
+        loadImage(house.house_id);
+        loadfacility(house.house_id);
+    }, [house])
 
 
     const diff =()=>{
@@ -168,11 +178,11 @@ function Listview(props) {
                                             </div>
                                         </div>
                                         <hr></hr>
-                                        <div>
+                                        {/* <div>
                                             <h3>편의 시설</h3>
                                             <p>{facility} </p>
                                         </div>
-                                        <hr></hr>
+                                        <hr></hr> */}
                                         <div className="form-group"><SimpleSlider id={houseimage} /></div>
                                         <br></br>
                                         <hr></hr>
