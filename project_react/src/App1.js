@@ -26,6 +26,10 @@ import Listview from './component/search/listview';
 import Payment from './component/search/payment'
 
 import HostRegist from './component/host/HostRegist';
+import Login from './component/login';
+
+import House from './component/hostmode/house';
+import Reservation from './component/hostmode/reservation';
 
 function App() {
   return (
@@ -56,7 +60,12 @@ function App() {
             <Route path="board/view/:id" element={<BoardView/>}/>
 
             <Route path="hostregist" element={<HostRegist />} />
-            
+            <Route path = "login" element={<Login/>}/>
+
+            <Route path="hostmode/house" element={<House />} />
+            <Route path="hostmode/reservation" element={<Reservation />} />
+
+
             {/* Using path="*"" means "match anything", so this route
                   acts like a catch-all for URLs that we don't have explicit
                   routes for. */}
@@ -97,7 +106,7 @@ function Layout() {
                                   <li className="nav-item">
                                     <NavLink className="nav-link active" to="/">Home <span class="sr-only">(current)</span></NavLink>
                                     </li>
-                                    <li className="nav-item">
+                                    {/* <li className="nav-item">
                                         <NavLink className="nav-link" to="/page1">Top Destinations</NavLink>
                                     </li>
                                     <li className="nav-item">
@@ -105,12 +114,15 @@ function Layout() {
                                     </li>
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/help">Contact Us</NavLink>
-                                    </li>
+                                    </li> */}
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/help">helpcenter</NavLink>
                                     </li>
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/hostregist">Host Regist</NavLink>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" to="/hostmode/house">host mode</NavLink>
                                     </li>
                                 </ul>
                             </div>                            

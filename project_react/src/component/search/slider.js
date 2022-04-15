@@ -6,9 +6,12 @@ import axios from 'axios';
 export default class SimpleSlider extends Component {
 
   
-//PR test
+
   render() {
     console.log(this.props)
+    console.log(this.props.id[0])
+    console.log(this.props.id[1])
+    console.log(this.props.id[2])
 
 
 
@@ -50,14 +53,15 @@ export default class SimpleSlider extends Component {
       <div>
         <h2> </h2>
         <Slider {...settings}>
+          
           <div>
-            <h3>1</h3>
+            <img style={{margin :"0 auto"}} src ={this.props.id[0]}></img>
           </div>
           <div>
-            <h3>2</h3>
+          <img  style={{margin :"0 auto"}} src ={this.props.id[1]}></img>
           </div>
           <div>
-            <h3>3</h3>
+          <img  style={{margin :"0 auto"}} src ={this.props.id[2]}></img>
           </div>
    
         </Slider>
