@@ -8,7 +8,7 @@
 	<select id="Host_houseList" parameterType="Host_HouseDto" resultType="Host_HouseDto">
 		
 		select A.*,
-		(select images_thumbnail from images where house_id = A.house_id) as images_thumbnail
+		(select images_thumbnail from images where house_id = A.house_id limit 1) as images_thumbnail
 		from house A 
 		where user_id=#{user_id}
 	
@@ -20,7 +20,7 @@
 		
 		<select id="Host_getHost_houseView"  parameterType="Long"  resultType="Host_HouseDto">
 		select A.*,
-		(select images_thumbnail from images where house_id = A.house_id) as images_thumbnail
+		(select images_thumbnail from images where house_id = A.house_id limit 1) as images_thumbnail
 		from house A 
 		where user_id=#{user_id}
 		limit #{start}, #{pageSize}   
