@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="Host_Reservation">
+
+	<select id="Host_reservationList" parameterType="Host_ReservationDto" resultType="Host_ReservationDto">
+		select A.*, 
+	    (select house_name from house where house_id = A.house_id) as house_name,
+	    (select user_name from user_info where user_id = A.user_id) as user_name,
+	    (select images_thumbnail from images where house_id = A.house_id) as images_thumbnail
+	    from booking A
+	    where a.user_id = #{user_id}	
+	</select>
+		
+		<select id="Host_getHost_reservationTotal" parameterType="Host_ReservationDto" resultType="Integer">
+		select count(*) from board where user_id=#{user_id}  
+		</select>
+		
+		<select id="Host_getHost_reservationView"  parameterType="Long"  resultType="Host_ReservationDto">
+		select A.*,
+		(select images_thumbnail from images where house_id = A.house_id) as images_thumbnail
+		from house A 
+		where user_id=#{user_id}
+
+		</select>
+		
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+ 
+<configuration>
+    <typeAliases> 
+        <!-- package name="com.example.demo"/-->
+        
+        <typeAlias alias="HelpDto" type="com.woori.mlp.help.domain.HelpDto" />
+        <typeAlias alias="Host_HouseDto" type="com.woori.mlp.hostmode.house.domain.Host_HouseDto" />
+        <typeAlias alias="Host_ReservationDto" type="com.woori.mlp.hostmode.reservation.domain.Host_ReservationDto" />
+        <typeAlias alias="BaseDto" type="com.woori.mlp.common.BaseDto" />
+    </typeAliases>
+    
+    <mappers>   
+        <mapper resource="mappers/Help.xml" />
+        <mapper resource="mappers/Host_house.xml" />
+        <mapper resource="mappers/Host_reservation.xml" />
+    </mappers>
+</configuration>
+
+
+
+

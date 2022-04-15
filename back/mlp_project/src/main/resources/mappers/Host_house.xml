@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="Host_House">
+
+	<select id="Host_houseList" parameterType="Host_HouseDto" resultType="Host_HouseDto">
+		
+		select A.*,
+		(select images_thumbnail from images where house_id = A.house_id) as images_thumbnail
+		from house A 
+		where user_id=#{user_id}
+	
+	</select>
+	
+		<select id="Host_getHost_houseTotal" parameterType="Host_HouseDto" resultType="Integer">
+		select count(*) from board where user_id=#{user_id}  
+		</select>
+		
+		<select id="Host_getHost_houseView"  parameterType="Long"  resultType="Host_HouseDto">
+		select A.*,
+		(select images_thumbnail from images where house_id = A.house_id) as images_thumbnail
+		from house A 
+		where user_id=#{user_id}
+		limit #{start}, #{pageSize}   
+
+		</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

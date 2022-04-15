@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="Help">
+
+	<select id="Help_startGuideList" parameterType="HelpDto"
+	resultType="HelpDto">
+		
+		select center_id, center_image, center_title, center_contents, center_create, hit 
+		from customer_center 
+		where center_category='1' 
+		order by center_id desc 
+	
+	</select>
+		
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

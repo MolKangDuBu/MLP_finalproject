@@ -1,5 +1,0 @@
-INDEX VERSION 1.131+C:\Users\SJ\Desktop\test2\project\MLP_finalproject\MLP_finalproject\project_boot\.metadata\.plugins\org.eclipse.jdt.core
-2017055195.index
-3581163120.index
-1865797976.index
-2112000929.index
