@@ -19,5 +19,5 @@ class Mapcontent extends Component{
 
 export default GoogleApiWrapper({
   libraries: ["places"],
-  apiKey : "AIzaSyBOmFnHASzr_qBQr67763k9CJC_RhOBh_4",
+  apiKey : "Google API Key",
 })(Mapcontent);
