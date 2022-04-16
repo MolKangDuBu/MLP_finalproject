@@ -6,7 +6,7 @@ import Geocode from 'react-geocode';
 
 function Map2(props) {
   const mapRef = useRef(null);
-  Geocode.setApiKey("AIzaSyBOmFnHASzr_qBQr67763k9CJC_RhOBh_4")
+  Geocode.setApiKey("Google API Key")
   Geocode.setLanguage('en')
   Geocode.setRegion('es')
   Geocode.enableDebug()
