@@ -1,10 +1,10 @@
 plugins {
-	id 'org.springframework.boot' version '2.6.6'
+	id 'org.springframework.boot' version '2.6.5'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
 }
 
-group = 'com.woori'
+group = 'org.multicampus'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
@@ -19,16 +19,28 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
+	implementation 'org.springframework.session:spring-session-core'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'mysql:mysql-connector-java'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'io.projectreactor:reactor-test'
+	implementation 'org.springframework.session:spring-session-jdbc'
+	implementation 'org.mariadb.jdbc:mariadb-java-client'
+	implementation 'mysql:mysql-connector-java'
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+	
+	// https://mvnrepository.com/artifact/com.jcraft/jsch
+	implementation group: 'com.jcraft', name: 'jsch', version: '0.1.55'
+
+
+
+	
 }
 
 tasks.named('test') {

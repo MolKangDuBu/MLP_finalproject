@@ -1,102 +1,78 @@
-
 import React,{useState, useEffect} from "react";
 import '../../css/bootstrap.min.css';
 import '../../css/datepicker.css';
 import '../../css/templatemo-style.css';
-import { Link, useNavigate  } from "react-router-dom";
+import { Link, useNavigate, useParams  } from "react-router-dom";
 import Axios from "axios";
+import axios from "axios";
 
-function HelpView() {
-  let history = useNavigate (); //자바스크립트로 history.go(-1)
+//http://127.0.0.1:9090/help/view/{id}
 
-  const [inputs, setInputs] = useState({
-    title: '',
-    writer: '',
-    contents:'',
-    filename:''
-  });
+function HelpView(props) {
+    let {id} = useParams(); //url주소로부터 {} 를 받는다 
+    let history = useNavigate (); //자바스크립트로 history.go(-1)
 
-
-  const { title, writer,contents, filename  } = inputs; 
-
-  useEffect(()=>{
-    var contents = document.getElementById("contents");
-   
-
-  }, []);
-
-  const onChange = (e) => {
-    const { value, name } = e.target;
-    setInputs({
-      ...inputs, // 기존의 input 객체를 복사한 뒤
-      [name]: value // name 키를 가진 값을 value 로 설정
+    //inputs 변수에 JSON객체저장
+    const [inputs, setInputs] = useState({
+        center_id: '',
+        center_title: '',
+        center_image:'',
+        center_create:'',
+        center_contents:''
     });
-  };
 
-  const onReset = () => {
-    setInputs({
-      title: '',
-      writer: '',
-      contents:'',
-      filename:''
-    })
-  };
+    //해체 JSON ->일반변수로 전환한다 
+    const { center_id, center_title,center_image, center_create,
+        center_contents  } = inputs; 
 
-  //서버로 정보를 전송하는 함수 
-  const onSubmit=(e)=> {
-    e.preventDefault(); //무조건 서버로 전송을 하도록 되어있어서 그 작업 못하게 막고 
-    //오류처리 
+    useEffect(()=>{
+        
+        axios.get("http://127.0.0.1:9090/help/view/"+id)
+        .then(res=>{
+            console.log( res.data );
+            setInputs({
+                center_id:res.data.center_id,
+                center_title: res.data.center_title,
+                center_image: res.data.center_image,
+                center_contents:res.data.center_contents,
+                center_create:res.data.center_create,
+              });
+        })
+        .catch(error=>{
+            console.log(error);
+        });
 
-    //파일을 업로드할때는 반드시  FormData객체를 만들어야 한다 
-    var frmData = new FormData(); 
-    
-    frmData.append("title", inputs.title);
-    frmData.append("writer", inputs.writer);
-    frmData.append("contents", inputs.contents);
-    
-    frmData.append("file", document.myform.filename.files[0]); //파일은 배열형태로 붙이자
-    Axios.post('http://localhost:9090/board/insert/', frmData)
-    .then(
-        res =>{
-          console.log(res.data);
-          alert("등록되었습니다.");
-          history('/board');//list 로 이동하기 
-        } 
-    );
-   
-  }
-   
+    }, []);
 
-  return (
-    <div >
+    //함수 3개 지우기 
 
-              
-
+    return (
+        <div >
           <div className="tab-pane " id="1a">
 
           <div class="container mt-5" style={{"minHeight":"600px","height":"800px"}}>
             <div class="row">
                 
-                    <h2>TITLE HEADING</h2>
-                    <h5>Title description, Dec 7, 2020</h5>
+                    <h2>{inputs.center_title}</h2>
+                    <h5>{inputs.center_create}</h5>
 
                     <div class="fakeimg">  
-                        <img src="../img/tm-img-06.jpg" alt="Image" className="img-fluid tm-recommended-img" 
-                        style={{"width":"100%"}} />
+                        <img src={inputs.center_image} alt="Image" className="img-fluid tm-recommended-img" 
+                        style={{"width":"100%", "height":"400px"}} />
                     </div>
                     
+                   
+                    <p style={{"whiteSpace":"pre-wrap"}}>
+                    {inputs.center_contents}
+                    </p>
                     
-                    <p>Some text..</p>
-                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-                                    
                 </div>
             </div>
 
 
          
               <div className="form-group">
-                  <input type="submit" value="목록 " className="btn btn-primary"/>
+                  <Link to="/help"  className="btn btn-primary">목록</Link>
               </div>
          
          

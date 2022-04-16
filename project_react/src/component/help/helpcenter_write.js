@@ -10,19 +10,16 @@ function HelpWrite() {
   let history = useNavigate (); //자바스크립트로 history.go(-1)
 
   const [inputs, setInputs] = useState({
-    title: '',
-    writer: '',
-    contents:'',
-    filename:''
+    center_title: '',
+    file_image: '',
+    center_contents:'',
+    center_category:''
   });
 
-
-  const { title, writer,contents, filename  } = inputs; 
-
+  const {center_title, center_contents, center_category, file_image}=inputs;
+  
   useEffect(()=>{
-    var contents = document.getElementById("contents");
    
-
   }, []);
 
   const onChange = (e) => {
@@ -50,28 +47,28 @@ function HelpWrite() {
     //파일을 업로드할때는 반드시  FormData객체를 만들어야 한다 
     var frmData = new FormData(); 
     
-    frmData.append("title", inputs.title);
-    frmData.append("writer", inputs.writer);
-    frmData.append("contents", inputs.contents);
+    frmData.append("center_title",    inputs.center_title);
+    frmData.append("center_category", inputs.center_category);
+    frmData.append("center_contents", inputs.center_contents);
     
-    frmData.append("file", document.myform.filename.files[0]); //파일은 배열형태로 붙이자
-    Axios.post('http://localhost:9090/board/insert/', frmData)
+    frmData.append("file_image", document.myform.file_image.files[0]); //파일은 배열형태로 붙이자
+    Axios.post('http://localhost:9090/help/save/', frmData)
     .then(
         res =>{
           console.log(res.data);
           alert("등록되었습니다.");
-          history('/board');//list 로 이동하기 
+          history('/help');//list 로 이동하기 
         } 
-    );
+    )
+    .catch(error=>{
+      console.log( error );
+    })
    
   }
    
 
   return (
     <div >
-
-              
-
           <div className="tab-pane " id="1a">
           <form name="myform" onSubmit={onSubmit}  encType="multipart/form-data">
               <div className="form-group">    
@@ -79,37 +76,39 @@ function HelpWrite() {
                   <input 
                     type="text" 
                     className="form-control" 
-                    name="title"
-                    value={title}
+                    name="center_title"
+                    value={center_title}
                     onChange={onChange}
                     />
               </div>
               <div className="form-group">
-                  <label>이름: </label>
-                  <input type="text" 
-                    className="form-control"
-                    name="writer"
-                    value={writer}
-                    onChange={onChange}
-                    />
+                  <label>카테고리: </label>
+                  <select name="center_category" 
+                  className="form-control"
+                  value={center_category}
+                  onChange={onChange}
+                  >
+                      <option value="1">가이드</option>
+                      <option value="2">도움말</option>
+                  </select>
               </div>
               
               <div className="form-group">
                   <label>내용: </label>
                   <textarea type="text"
                     rows="10"
-                    name="contents" 
+                    name="center_contents" 
                     className="form-control"
-                    value={contents}
+                    value={center_contents}
                     onChange={onChange}
                     />
               </div>
               <div className="form-group">
                   <label>파일: </label>
                   <input type="file"
-                    name="filename" 
+                    name="file_image" 
                     className="form-control"
-                    value={filename}
+                    value={file_image}
                     onChange={onChange}
                     />
               </div>

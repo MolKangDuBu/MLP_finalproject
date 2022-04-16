@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="SearchResult">
+	
+	<select id ="Search_list" parameterType = "SearchResultDto" resultType = "SearchResultDto">
+		select A.*, images_thumbnail
+		from house A, (
+		select C.house_id,B.images_thumbnail
+		from images B, house C
+		where B.house_id = C.house_id
+		group by C.house_id)D
+		where D.house_id=A.house_id and house_guest >= #{house_guest} and
+		 house_bedroom >= #{house_bedroom} and
+		 house_address1 like concat ('%', #{house_address1}, '%')
+			
+	</select>
+	
+	<select id="Search_image" parameterType = "int" resultType = "String">
+		select IMAGES_THUMBNAIL
+		from IMAGES
+		where house_id = #{id}
+	</select>
+	
+	<select id ="Search_facility" parameterType ="int" resultType = "FacilityDto">
+		select *
+		from FACILITY
+		where house_id = #{id}
+	</select>
+	
+	
+	<select id ="Search_view" parameterType = "int" resultType = "SearchResultDto">
+		select *
+		from house
+		where house_id = #{id}
+			
+	</select>
+	
+	<select id= "Search_getTotal" parameterType = "SearchResultDto" resultType = "int">
+		select count(*)
+		from house
+		where house_guest >= #{house_guest} and
+		 house_bedroom >= #{house_bedroom} and
+		 house_address1 like concat ('%', #{house_address1}, '%')
+	</select>
+	
+	<insert  id="Booking" parameterType = "BookingDto">
+		insert booking(booking_price, booking_create, house_id, user_id, booking_people)
+		values(#{booking_price}, now(), #{house_id}, #{user_id}, #{booking_people})
+	</insert>
+	
+	<select id ="checkmax_id" resultType = "int">
+		select MAX(booking_id) from booking;
+	</select>
+	
+	<insert id ="Schedule" parameterType = "BookingDto">
+		insert schedule(schedule_year, schedule_month, schedule_day, schedule_create, booking_id)
+		values(#{year}, #{month}, #{day}, now(),#{booking_id})
+	</insert>
+	
+	<select id= "get_id" parameterType ="String" resultType = "String">
+		select user_id
+		from user_info
+		where user_email =#{email}
+	</select>
+	
+	<insert id ="insert_email" parameterType = "String">
+		insert user_info(user_email, user_create)
+		values(#{email}, now())
+	</insert>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

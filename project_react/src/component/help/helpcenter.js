@@ -12,6 +12,7 @@ import StartGuide1 from "./StartGuide1";
 function HelpCenter() {
     const [guideList, setGuideList] = useState([]);
     const [highlightList, setHighlightList] = useState([]);
+    const [keyword, setKeyword]=useState("")
 
     useEffect(()=>{
         loadGuide();
@@ -19,47 +20,56 @@ function HelpCenter() {
 
     //async - 비동기를 동기로 바꾸는 명령어 데이터가 다 오면 
     const loadGuide= async()=>{
-        axios.get("http://localhost:9090/help/guideList")
+        var url = "http://localhost:9090/help/guideList?keyword="+keyword;
+        console.log( url );
+
+        axios.get(url)
         .then( (res)=>{
             //console.log( res.data );
-            setGuideList(...guideList, res.data);
-            console.log( guideList.length);
+            setGuideList(res.data.guideList);
+            setHighlightList(res.data.highLightList);
+            
+            //console.log( guideList.length);
         }) 
-        
-        setHighlightList(...highlightList, 
-            [
-                {"center_id":"1", "center_image":"img/tm-img-01.jpg", 
-                "center_title":"인기도움말1", "center_contents":"내용2", 
-                "center_create":"", "center_update":""},
-                {"center_id":"1", "center_image":"img/tm-img-02.jpg", 
-                "center_title":"인기도움말2", "center_contents":"내용3", 
-                "center_create":"", "center_update":""},
-                {"center_id":"1", "center_image":"img/tm-img-03.jpg", 
-                "center_title":"인기도움말3", "center_contents":"내용3", 
-                "center_create":"", "center_update":""},
-                {"center_id":"1", "center_image":"img/tm-img-04.jpg", 
-                "center_title":"인기도움말4", "center_contents":"내용4", 
-                "center_create":"", "center_update":""},
-            ])
     }
+
+    const onChange = (e) => {
+      const { value, name } = e.target;
+      setKeyword(keyword, value);
+    };
+
+    const onChangeKeyword=(e)=>{
+      setKeyword(e.target.value);
+      //console.log( keyword );
+    }
+    const onSubmit=(e)=> {
+      e.preventDefault(); //무조건 서버로 전송을 하도록 되어있어서 그 작업 못하게 막고 
+      //오류처리 
+      console.log( "******" + keyword );
+      
+      loadGuide();
+     
+    }
+
 
   return (
     <div >
-
-        <div className="tab-pane " id="1a"  style={{"height":"200px", "marginTop":"120px"}}>
+        <form name="myform" onSubmit={onSubmit} >
+        <div className="tab-pane " id="1a"  style={{"height":"100px", "marginTop":"90px"}}>
             <div className="container-fluid mt-3">
-              <h1>무엇이든 물어보세요</h1>
-              <div className="input-group mb-3">
-                <input type="text" className="form-control" placeholder="Search"/>
-                <button className="btn btn-success" type="submit">Go</button>
+              <h1 className="text-uppercase tm-banner-title" style={{"text-align":"center"}}>무엇이든 물어보세요</h1>
+              <div className="input-group mb-3" style={{"marginTop":"20px"}}>
+                <input type="text" className="form-control" placeholder="Search" name="keyword"
+                   onChange={onChangeKeyword} />
+                <button className="btn btn-success" type="submit" >찾기</button>
               </div>
           </div>
         </div>
-         
+        </form>
 
           <div className="tab-pane " id="1a">
             <div>
-                  <h1>시작가이드</h1>
+                  <h3>시작가이드</h3>
               </div>
                 <div className="tm-recommended-place-wrap">
 
@@ -83,7 +93,7 @@ function HelpCenter() {
 
           <div className="tab-pane " id="1a">
             <div>
-                  <h1>인기도움말</h1>
+                  <h3>인기도움말</h3>
               </div>
                 <div className="tm-recommended-place-wrap">
                 {

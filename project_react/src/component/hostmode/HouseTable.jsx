@@ -125,10 +125,10 @@ function HouseTable({ columns, data }) {
             prepareRow(data);
             return (
 
-              <tr className="common-table-row1" key={data.values.images_thumbnail + data.values.house_name + data.values.house_active + data.values.house_bedroom + data.values.house_bed + data.values.house_bathroom + data.values.house_address1 + data.values.house_address2 + data.values.house_create + data.values.house_update}>
-
-                  <td className="common-table-column1">{data.values.images_thumbnail}</td>
-                  <Link className='text-link' to="/hostmode/house/view/">
+              <tr className="common-table-row1" key={data.values.house_id +data.values.images_thumbnail + data.values.house_name + data.values.house_active + data.values.house_bedroom + data.values.house_bed + data.values.house_bathroom + data.values.house_address1 + data.values.house_address2 + data.values.house_create + data.values.house_update}>
+                 
+                  <td className="common-table-column1"><img src ={data.values.images_thumbnail} style={{width :"100px"}} ></img></td>
+                  <Link className='text-link' to="/listview" state={{ id: data.values.house_id}}>
                   <td className="common-table-column1">{data.values.house_name}</td>
                   </Link>
                   <td className="common-table-column1">{data.values.house_active === "Y"? "운영 중" : "운영중지"}</td>

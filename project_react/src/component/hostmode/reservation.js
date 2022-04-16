@@ -34,7 +34,7 @@ function Reservation() {
             Header: '상태',
         },
         {
-            accessor: 'user_name',
+            accessor: 'user_email',
             Header: '예약자',
         },
         {
@@ -61,6 +61,10 @@ function Reservation() {
             accessor: 'booking_cancel',
             Header: '',
         },
+        {
+            accessor: 'house_id',
+            Header: '',
+        }
         
   ]
 
@@ -77,7 +81,7 @@ function Reservation() {
 
     const loadReservationlist = async()=>{
         // 임시 user_id (로그인 아이디로 추후 변경해야함)
-        const user_id = '1';
+        const user_id = sessionStorage.getItem("user");
         // if(page===undefined) page=1;
         const res = await axios.get(`http://localhost:9090/host/reservation/list?user_id=${user_id}`)
         console.log( res.data );
@@ -143,10 +147,17 @@ function Reservation() {
                 <div className="container">
                     <div className="row">
                          <nav class="navbar navbar-expand-lg narbar-light">
+                         <a className="navbar-brand mr-auto" href="#">
+                            <NavLink to="/"><img src="../img/logo.png" alt="Site logo"/></NavLink> 
+                                Journey
+                            </a>
+                            <button type="button" id="nav-toggle" className="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
                             <div id="mainNav" className="collapse navbar-collapse tm-bg-white">
                                 <ul className="navbar-nav ml-auto">
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" to="/">Home</NavLink>
+                                        <NavLink className="nav-link" to="/">메인</NavLink>
                                     </li>
                                     <li className="nav-item">
                                         <NavLink className="nav-link" to="/hostmode/house">숙소 확인</NavLink>
@@ -155,7 +166,7 @@ function Reservation() {
                                         <NavLink className="nav-link active" to="/hostmode/reservation">예약 확인<span class="sr-only">(current)</span></NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" to="/hostmode/house">신규 등록</NavLink>
+                                        <NavLink className="nav-link" to="/hostregist">숙소 등록</NavLink>
                                     </li>
                                 </ul>
                             </div>                            

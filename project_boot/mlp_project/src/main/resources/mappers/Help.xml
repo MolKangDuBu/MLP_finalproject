@@ -5,16 +5,62 @@
  
 <mapper namespace="Help">
 
-	<select id="Help_startGuideList" parameterType="HelpDto"
-	resultType="HelpDto">
+	<select id="Help_startGuideList" parameterType="HelpDto"	resultType="HelpDto">
 		
 		select center_id, center_image, center_title, center_contents, center_create, hit 
 		from customer_center 
 		where center_category='1' 
 		order by center_id desc 
+	</select>
 	
+	<select id="Help_HighlightList" parameterType="HelpDto"	resultType="HelpDto">	
+		select center_id, center_image, center_title, center_contents, center_create, hit 
+		from customer_center 
+		where center_category='2' 
+		and (center_title like concat('%', #{keyword} , '%') or
+			center_contents like concat('%', #{keyword} , '%'))
+		order by hit desc, center_id desc 
+		limit 0, 5
+	</select>
+	
+	<update id="Help_updateHit" parameterType="Integer">
+		update customer_center set hit=hit+1 where center_id=#{center_id}
+	</update>
+	
+	<select id="Help_getGuide" parameterType="Integer" resultType="HelpDto">
+		select center_id, center_image, center_title, center_contents, center_create, hit 
+		from customer_center 
+		where center_id=#{center_id}
 	</select>
 		
+	<insert id="Help_insert" parameterType="HelpDto">
+		insert into customer_center
+		(
+			center_image
+			,center_title
+			,center_contents
+			,center_create
+			,center_category
+			,hit
+			,delyn
+			,image_name
+		)
+		values
+		(
+			#{center_image}
+			,#{center_title}
+			,#{center_contents}
+			,now()
+			,#{center_category}
+			,0
+			,'N'
+			,#{image_name}
+		)
+	</insert>	
+	
+	
+	
+	
 </mapper>
 
 

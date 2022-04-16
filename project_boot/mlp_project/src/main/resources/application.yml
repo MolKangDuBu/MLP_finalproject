@@ -1,0 +1,72 @@
+
+spring:
+  profiles:
+    active: local
+
+---
+spring:
+  profiles: local
+  devtools:
+    livereload:
+      enable: true
+    restart:
+      enable: true
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+      show-sql: true
+
+
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/myproject2
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  
+  session:
+    store-type: jdbc
+    jdbc.initialize-schema: always  
+
+  messages:
+    basename: messages,ValidationMessages,PropertyNames
+    cache-duration: -1
+    encoding: UTF-8
+
+server:
+  port: 9090
+
+  servlet:
+    session:
+      timeout: 60m
+  ssl:
+    enabled: false
+    key-alias: inaf
+    key-store: inaf.pkcs12
+    key-store-password: test1234
+    key-password: test1234
+    trust-store: inaftrust.pkcs12
+    trust-store-password: test1234
+  error:
+    include-exception: true
+    include-stacktrace: always
+  
+  upload:
+     fileUploadPath : fileupload
+     domain : http://127.0.0.1:9090
+
+  
+

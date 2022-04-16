@@ -74,7 +74,7 @@ function BoardView(props, {match} ){
   
     return (
       <div>
-        <form name="myform" onSubmit={onSubmit}>
+        {/* <form name="myform" onSubmit={onSubmit}>
               <div className="form-group">    
                   <label>제목:  </label>
                   <input 
@@ -120,8 +120,11 @@ function BoardView(props, {match} ){
           </form>
 
         <div>
-        
-        </div>
+          <b>값: </b>
+          {title} <br/>
+          {writer} <br/>
+          {contents} <br/>
+        </div> */}
       </div>
     );
   }

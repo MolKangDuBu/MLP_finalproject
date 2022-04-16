@@ -82,7 +82,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .tm-top-bar.active .navbar-brand img { width: 40px; }
-.tm-top-bar-bg { height: 119px; }
+.tm-top-bar-bg { height: 50px; }
 .tm-top-bar a { color: black; }
 
 .navbar-brand {
@@ -95,11 +95,6 @@ p:last-child { margin-bottom: 0; }
     width: 100%;
     padding-top: 0;
     padding-bottom: 0;
-}
-
-.text-link {
-    color: inherit;
-    text-decoration: inherit;
 }
 
 .nav-link.active, .nav-link:hover {	color: #69c6ba;	}
@@ -178,11 +173,21 @@ label { font-weight: 700; }
     margin-right: 15px;
 }
 
+.hbox {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* 큰 레이아웃을 잡을 때에는 stretch가 더 편할 거에요. */
+  }
+
+.flex21 { flex: 1 }
+.guide > * { outline: 1px solid #4f80ff; } /* 아예 guide class를 만들어둬도 좋다! */
+
+.tm-form-group2 { float: right; }
 .tm-form-group { float: left; }
 .tm-form-group-pad { padding: 0 8px; }
-.tm-form-group-1 { width: 50%; }
-.tm-form-group-2 { width: 50%; }
-.tm-form-group-3 { width: 25%; }
+.tm-form-group-1 { width: 45%; }
+.tm-form-group-2 { width: 90%; }
+.tm-form-group-3 { width: 45%; }
 .form-control { border-radius: 0; }
 
 .tm-btn {
@@ -504,7 +509,11 @@ footer p { color: white; }
     font-weight: 600;
 }
 
-#google-map { height: 600px; }
+#google-map { 
+    height: 400px; 
+    text-align: center;
+    margin :0 auto;
+}
 
 @media screen and (max-width: 1080px) {
     .tm-tab-link-li { width: 25%; }
