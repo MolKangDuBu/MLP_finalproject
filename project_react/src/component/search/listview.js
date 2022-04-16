@@ -12,10 +12,15 @@ import Map from './testmap';
 
 
 function Listview(props) {
-    const childFunc = React.useRef(null);
 
+
+    const childFunc = React.useRef(null);
+    const user = sessionStorage.getItem("user");
+    const email = sessionStorage.getItem("email");
+    console.log("user :::",user);
     let history = useNavigate ();
     const data = useLocation();
+    console.log("view list",data);
     const [houseimage, setImage] = useState([]);
     const [facility, setFac] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -90,7 +95,10 @@ function Listview(props) {
                 last : date[0].endDate.getFullYear().toString()+"."+
                 (date[0].endDate.getMonth()+1).toString()+"."+
                 date[0].endDate.getDate().toString(),
-                pay : house.house_pay,
+                pay : (house.house_pay *(datediff)),
+                user : user,
+                guest : data.state.guest,
+               
 
             }
         })

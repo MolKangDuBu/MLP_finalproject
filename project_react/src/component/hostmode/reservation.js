@@ -34,7 +34,7 @@ function Reservation() {
             Header: '상태',
         },
         {
-            accessor: 'user_name',
+            accessor: 'user_email',
             Header: '예약자',
         },
         {
@@ -81,7 +81,7 @@ function Reservation() {
 
     const loadReservationlist = async()=>{
         // 임시 user_id (로그인 아이디로 추후 변경해야함)
-        const user_id = '1';
+        const user_id = sessionStorage.getItem("user");
         // if(page===undefined) page=1;
         const res = await axios.get(`http://localhost:9090/host/reservation/list?user_id=${user_id}`)
         console.log( res.data );

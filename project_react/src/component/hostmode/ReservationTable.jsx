@@ -137,14 +137,14 @@ function ReservationTable({ columns, data }) {
             //prepareRow(data);
             return (
 
-              <tr className="common-table-row1" key={data.values.images_thumbnail + data.values.house_name + data.values.booking_status + data.values.user_name + data.values.booking_people + data.values.booking_price + data.values.booking_update + data.values.booking_create + data.values.booking_complete + data.values.booking_cancel}>
+              <tr className="common-table-row1" key={data.values.images_thumbnail + data.values.house_name + data.values.booking_status + data.values.user_email + data.values.booking_people + data.values.booking_price + data.values.booking_update + data.values.booking_create + data.values.booking_complete + data.values.booking_cancel}>
 
                   <td className="common-table-column1"><img src = {data.values.images_thumbnail} style= {{width :"100px"}}></img></td>
                   <Link className='text-link' to="/listview" state={{ id: data.values.house_id}}>
                   <td className="common-table-column1">{data.values.house_name}</td>
                   </Link>
                   <td className="common-table-column1">{data.values.booking_status === "Y"? "예약중" : data.values.booking_complete === "Y"? "완료" : "취소"}</td>
-                  <td className="common-table-column1">{data.values.user_name}</td>
+                  <td className="common-table-column1">{data.values.user_email}</td>
                   <td className="common-table-column1">{data.values.booking_people}&nbsp;명</td>
                   <td className="common-table-column1">{data.values.booking_price}&nbsp;원</td>
                   <td className="common-table-column1">{data.values.booking_update === ""? data.values.booking_create:data.values.booking_update}</td>

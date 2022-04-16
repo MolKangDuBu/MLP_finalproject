@@ -62,7 +62,7 @@ function Searchlist() {
                         <div className="tm-recommended-place-wrap">
                             {houselist.map(function (e) {
                                 return <div className="tm-recommended-place">
-                                    <img src="img/tm-img-06.jpg" alt="Image" className="img-fluid tm-recommended-img" />
+                                    <img src={e.images_thumbnail} alt="Image" className="img-fluid tm-recommended-img" />
                                     <div className="tm-recommended-description-box">
                                         <h3 className="tm-recommended-title">{e.house_name}</h3>
                                         <p className="tm-text-highlight">{e.address1}</p>
@@ -70,7 +70,7 @@ function Searchlist() {
                                     </div>
                                     <a href="#none" className="tm-recommended-price-box">
                                         <p className="tm-recommended-price">{e.house_pay.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</p>
-                                        <Link to={`/listview`} state={{ id: e.house_id }}><p className="tm-recommended-price-link">Continue Reading</p></Link>
+                                        <Link to={`/listview`} state={{ id: e.house_id, guest : guest }}><p className="tm-recommended-price-link">Continue Reading</p></Link>
                                     </a>
                                 </div>
                             })}

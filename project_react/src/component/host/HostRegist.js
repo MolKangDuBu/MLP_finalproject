@@ -1,9 +1,9 @@
 import axios from 'axios';
 import React, {useState} from 'react';
 import Map from './Map2';
-
+import { useNavigate } from "react-router-dom";
 function HostRegist(props) {
-
+    const history = useNavigate();
     const [inputs, setInputs] = useState({
         HOUSE_NAME:'',
         HOUSE_CONTENTS:'',
@@ -12,11 +12,11 @@ function HostRegist(props) {
         HOUSE_BED:'',
         HOUSE_BEDROOM:'',
         HOUSE_BATHROOM:'',
-     
+        User_id :'',
     });
 
     const {HOUSE_NAME, HOUSE_CONTENTS, HOUSE_ADDRESS1, HOUSE_ADDRESS2, HOUSE_GUEST, HOUSE_BED, HOUSE_BEDROOM,
-             HOUSE_BATHROOM} = inputs;
+             HOUSE_BATHROOM, User_id} = inputs;
     
     const[HOUSE_PAY, setHousePay] = useState(0); 
     const onChangeHousePay = (e) => {
@@ -45,7 +45,7 @@ function HostRegist(props) {
         .then(
             res =>{
                 alert("등록되었습니다.");
-                // history('/board');//list 로 이동하기 
+                history('/');
             }
         )
     }
@@ -96,6 +96,7 @@ function HostRegist(props) {
            <h1> 숙소 등록 </h1>
            <form name="houseform" onSubmit = {onSubmit} encType="multipart/form-data">
             <div>
+                <input type = "hidden" name = "User_id" value={sessionStorage.getItem("user")}></input>
                 <label> 숙소명: </label>
                 <input
                 type="text"

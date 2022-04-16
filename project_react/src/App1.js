@@ -3,8 +3,8 @@ import './App.css';
 import './header.css';
 
 import * as React from "react";
-import { Routes, Route, Outlet, Link, NavLink } from "react-router-dom";
-
+import { Routes, Route, Outlet, Link, NavLink, useNavigate } from "react-router-dom";
+import { useEffect, useState } from 'react';
 import About from './component/about';
 import Home from './component/home';
 import Dashboard from'./component/dashboard';
@@ -30,11 +30,30 @@ import Login from './component/login';
 
 import House from './component/hostmode/house';
 import Reservation from './component/hostmode/reservation';
+import Header from './component/Header';
+import Header2 from './component/Header2';
 
 function App() {
+
+  const [isLogin, setLogin] = useState(false);
+
+  useEffect(()=>{
+    console.log('isLogin---->', isLogin);
+  },[isLogin])
+
+  useEffect(()=>{
+    if(sessionStorage.getItem("islogin")==true){
+      setLogin(true);
+    } else {
+      setLogin(false);
+    }
+
+  },[]);
+
   return (
     <div className="container">
        <h1>Basic Example</h1>
+       { isLogin === true ? <Header/>: <Header2/>}
 
         {/* Routes nest inside one another. Nested route paths build upon
               parent route paths, and nested route elements render inside
@@ -60,7 +79,7 @@ function App() {
             <Route path="board/view/:id" element={<BoardView/>}/>
 
             <Route path="hostregist" element={<HostRegist />} />
-            <Route path = "login" element={<Login/>}/>
+            <Route path = "login" element={<Login setLogin={setLogin} isLogin={isLogin}/>}/>
 
             <Route path="hostmode/house" element={<House />} />
             <Route path="hostmode/reservation" element={<Reservation />} />
@@ -78,6 +97,7 @@ function App() {
 
 
 function Layout() {
+
     const activeStyle = {
         color: 'green',
         fontSize: '2rem'
@@ -88,49 +108,9 @@ function Layout() {
           share across all the pages on your site, like navigation. */}
      
 
-      <hr />
+      <hr/>
 
-       <div className="tm-top-bar" id="tm-top-bar">
-                <div className="container">
-                    <div className="row">
-                        <nav class="navbar navbar-expand-lg narbar-light">
-                            <a className="navbar-brand mr-auto" href="#">
-                            <NavLink to="/"><img src="../img/logo.png" alt="Site logo"/></NavLink> 
-                                Journey
-                            </a>
-                            <button type="button" id="nav-toggle" className="navbar-toggler collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div id="mainNav" className="collapse navbar-collapse tm-bg-white">
-                                <ul className="navbar-nav ml-auto">
-                                  <li className="nav-item">
-                                    <NavLink className="nav-link active" to="/">Home <span class="sr-only">(current)</span></NavLink>
-                                    </li>
-                                    {/* <li className="nav-item">
-                                        <NavLink className="nav-link" to="/page1">Top Destinations</NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink className="nav-link" to="/page2">Recommended Places</NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink className="nav-link" to="/help">Contact Us</NavLink>
-                                    </li> */}
-                                    <li className="nav-item">
-                                        <NavLink className="nav-link" to="/help">helpcenter</NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink className="nav-link" to="/hostregist">Host Regist</NavLink>
-                                    </li>
-                                    <li className="nav-item">
-                                        <NavLink className="nav-link" to="/hostmode/house">host mode</NavLink>
-                                    </li>
-                                </ul>
-                            </div>                            
-                    </nav>
-                </div>
-            </div>
-        </div>
-
+      
       {/* An <Outlet> renders whatever child route is currently active,
           so you can think about this <Outlet> as a placeholder for
           the child routes we defined above. 
